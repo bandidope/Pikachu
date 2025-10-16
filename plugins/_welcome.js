@@ -50,7 +50,7 @@ export async function before(m, { conn, groupMetadata}) {
     // Imagen personalizada para bienvenida
     if (m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_ADD) {
       imgBuffer = await fetch(
-        'https://canvas-8zhi.onrender.com/api/welcome?title=Bienvenido&desc=Al%20Mejor%20Grupo%20Pikachu%20Bot&background=https://qu.ax/kiOkA.jpg'
+        'https://canvas-8zhi.onrender.com/api/welcome?title=Bienvenido&desc=Al%20Mejor%20Grupo%20Pikachu%20Bot&background=https://qu.ax/YXlqh.jpg'
 ).then(res => res.buffer());
 }
 
@@ -60,7 +60,7 @@ export async function before(m, { conn, groupMetadata}) {
       m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_REMOVE
 ) {
       imgBuffer = await fetch(
-        'https://canvas-8zhi.onrender.com/api/welcome?title=Se%20Fue%20Un%20Pendejo&desc=&background=https://qu.ax/kiOkA.jpg'
+        'https://canvas-8zhi.onrender.com/api/welcome?title=Se%20Fue%20Un%20Pendejo&desc=&background=https://qu.ax/YXlqh.jpg'
 ).then(res => res.buffer());
 }
 
@@ -90,7 +90,7 @@ export async function before(m, { conn, groupMetadata}) {
         mentions: [userJid]
 }, { quoted: fkontak});
 
-      await sendAudio('https://cdn.russellxz.click/42514214.mp3');
+      await sendAudio('https://qu.ax/DvqEr.mp3');
 }
 
     if (m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_LEAVE) {
