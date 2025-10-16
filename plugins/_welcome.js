@@ -50,7 +50,7 @@ export async function before(m, { conn, groupMetadata}) {
     // Imagen personalizada para bienvenida
     if (m.messageStubType === WAMessageStubType.GROUP_PARTICIPANT_ADD) {
       imgBuffer = await fetch(
-        'https://canvas-8zhi.onrender.com/api/welcome?title=Bienvenido&desc=al%20grupo%20Sasuke%20Bot&background=https://qu.ax/gcBQF.jpg'
+        'https://canvas-8zhi.onrender.com/api/welcome?title=Bienvenido&desc=al%20grupo%20Sasuke%20Bot&background=https://raw.githubusercontent.com/The-King-Destroy/Adiciones/main/Contenido/1745522645448.jpeg'
 ).then(res => res.buffer());
 }
 
